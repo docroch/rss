@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <title>Latest News in Tech</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/img/background.mp4" type="video/mp4">
+    </video>
+    <p id="date"></p>
+
+    <div class="tab">
+        <button class="tablinkslast active" onclick="openContents(event, 'iran')"
+            id="defaultOpenContents">ایران</button>
+        <button class="tablinkslast" onclick="openContents(event, 'out')">خارج</button>
+    </div>
+
+    <div id="iran" class="container iran tabcontentlast">
+        <div class="canvas scroll-left">
+            <div class="heading">
+                <h2>زومیت</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-iran"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+        <div class="canvas scroll-left">
+            <div class="heading">
+                <h2>دیجیاتو</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-iran"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+        <div class="canvas scroll-left">
+            <div class="heading">
+                <h2>تکنانیوز</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-iran"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+        <div class="canvas scroll-left">
+            <div class="heading">
+                <h2>تکنولایف</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-iran"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+    </div>
+    <div id="out" class="container out tabcontentlast">
+        <div class="canvas scroll-right">
+            <div class="heading">
+                <h2>CNET</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-out"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+        <div class="canvas scroll-right">
+            <div class="heading">
+                <h2>Wired</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-out"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+        <div class="canvas scroll-right">
+            <div class="heading">
+                <h2>Techradar</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-out"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+        <div class="canvas scroll-right">
+            <div class="heading">
+                <h2>Techcrunch</h2>
+            </div>
+            <div class="feed">
+                <ul class="feed-textarea-out"></ul>
+            </div>
+            <div class="padding-bottom"></div>
+        </div>
+    </div>
+
+    <div id="hosting" class="container hosting tabcontentlast"></div>
+    <div id="iran" class="container iran tabcontentlast"></div>
+    <div id="out" class="container out tabcontentlast"></div>
+
+
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
